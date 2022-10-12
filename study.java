@@ -8,10 +8,14 @@ class Main {
     String fName = scanner.next();
     System.out.print("名前：");
     String lName = scanner.next();
+    System.out.print("身長：");
+    double height = scanner.nextDouble();
+    System.out.print("体重：");
+    double weight = scanner.nextDouble();
 
     String name = fullName(fName, lName);
     
-    printData(name, 25, bmi(1.65,65.0));
+    printData(name, 25, bmi(height,weight));
     
   }
 
