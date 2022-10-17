@@ -3,6 +3,10 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
+
+    Process process1 = new Process();
+    process1.name = "tomo";
+    System.out.println(process1.name);
     
     System.out.print("名前：");
     String firstName = scanner.next();
@@ -16,5 +20,7 @@ class Main {
     double weight = scanner.nextDouble();
     
     Process.printData(Process.fullName(firstName, lastName), age, height, weight);
+
+    
   }
 }
