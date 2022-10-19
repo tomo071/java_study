@@ -4,9 +4,8 @@ class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    Process process1 = new Process();
-    process1.name = "tomo";
-    System.out.println(process1.name);
+    Process process1 = new Process("tomo");
+    process1.hello();
     
     System.out.print("名前：");
     String firstName = scanner.next();

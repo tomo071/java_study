@@ -1,4 +1,16 @@
 class Process {
+
+  public String name;
+
+  Process(String name) {
+    System.out.println("インスタンスが生成される");
+    this.name=name;
+  }
+
+  public void hello(){
+    System.out.println("こんにちは、私は" + this.name + "です");
+  }
+
   public static void printData(String name, int age, double height, double weight) {
     System.out.println("私の名前は" + name + "です");
     System.out.println("年齢は" + age + "歳です");
