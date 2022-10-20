@@ -1,46 +1,35 @@
 class Process {
 
-  
+  public String firstName;
+  public String lastName;
+  public int age;
+  public double height;
+  public double weight;
 
-  public void hello(){
-    System.out.println("こんにちは、私は" + this.name + "です");
+  Process(String firstName,String lastName,int age,double height,double weight){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
   }
 
-  public static void printData(String name, int age, double height, double weight) {
-    System.out.println("私の名前は" + name + "です");
-    System.out.println("年齢は" + age + "歳です");
-    System.out.println("身長は" + height + "mです");
-    System.out.println("体重は" + weight + "kgです");
-    double bmi = bmi(height, weight);
-    System.out.println("BMIは" + Math.round(bmi) + "です");
+  public void Fullname(){
+    System.out.println("こんにちは"+this.firstName+" "+this.lastName+"さん");
+  }
 
-    if (isHealthy(bmi)) {
-      System.out.println("標準値です");
-    } else {
-      System.out.println("標準値の範囲外です");
+  public void Bmi(){
+    double bmi = this.weight/(this.height*2);
+    double health = this.height*2*22;
+    double terget = this.weight - health;
+    System.out.println("あなたのBMIは"+bmi+"です");
+    System.out.println("適正体重は"+health+"です");
+    if (terget>0){
+      System.out.println("適正体重より高いです");
+    }else{
+      System.out.println("適正体重より高いです");
     }
+    System.out.println("適正体重より"+terget);
   }
 
-  public static String fullName(String firstName, String lastName) {
-    return firstName + " " + lastName;
-  }
-
-  public static String fullName(String firstName, String middleName, String lastName) {
-    return firstName + " " + middleName + " " + lastName;
-  }
-  
-  public static double bmi(double height, double weight) {
-    return weight / height / height;
-  }
-  
-  public static boolean isHealthy(double bmi) {
-    return bmi >= 18.5 && bmi < 25.0;
-  }
-
-  public String name;
-
-  Process(String name) {
-    System.out.println("インスタンスが生成される");
-    this.name=name;
-  }
 }

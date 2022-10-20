@@ -15,11 +15,9 @@ class Main {
     System.out.print("体重(kg)：");
     double weight = scanner.nextDouble();
 
-    Process process1 = new Process();
-    process1.hello(Process.fullname(firstName, lastName));
-    
-    Process.printData(Process.fullName(firstName, lastName), age, height, weight);
+    Process process1 = new Process(firstName, lastName, age, height, weight);
 
-    
+    process1.Fullname();
+    process1.Bmi();
   }
 }
