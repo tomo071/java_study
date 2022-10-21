@@ -25,11 +25,10 @@ class Process {
     System.out.println("あなたのBMIは"+bmi+"です");
     System.out.println("適正体重は"+health+"です");
     if (terget>0){
-      System.out.println("適正体重より高いです");
+      System.out.println("適正体重より"+terget+"高いです");
     }else{
-      System.out.println("適正体重より高いです");
+      System.out.println("適正体重より"+terget+"高いです");
     }
-    System.out.println("適正体重より"+terget);
   }
 
 }
