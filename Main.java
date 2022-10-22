@@ -16,8 +16,12 @@ class Main {
     double weight = scanner.nextDouble();
 
     Process process1 = new Process(firstName, lastName, age, height, weight);
+    Process process2 = new Process(firstName, lastName, age, height, weight);
 
     process1.Fullname();
     process1.Bmi();
+
+    process2.Fullname();
+    process2.Bmi();
   }
 }
