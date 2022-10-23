@@ -1,5 +1,7 @@
 class Process {
 
+  public static int count = 0;
+
   public String firstName;
   public String lastName;
   public int age;
@@ -15,6 +17,7 @@ class Process {
   }
 
   public void Fullname(){
+    count = count + 1;
     System.out.println("こんにちは"+this.firstName+" "+this.lastName+"さん");
   }
 
