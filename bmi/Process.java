@@ -3,12 +3,14 @@ class Process {
   public static int count = 0;
 
   public String firstName;
+  public String middleName;
   public String lastName;
   public int age;
   public double height;
   public double weight;
 
   Process(String firstName,String lastName,int age,double height,double weight){
+    count = count + 1;
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -16,9 +18,22 @@ class Process {
     this.weight = weight;
   }
 
-  public void Fullname(){
+  Process(String firstName, String middleName, String lastName,int age,double height,double weight){
     count = count + 1;
-    System.out.println("こんにちは"+this.firstName+" "+this.lastName+"さん");
+    this.firstName = firstName;
+    this.middleName = middleName;
+    this.lastName = lastName;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+
+  public void Fullname(){
+    if(this.middleName == "なし"){
+      System.out.println("こんにちは"+this.firstName+" "+this.lastName+"さん");
+    }else{
+      System.out.println("こんにちは"+this.firstName+this.middleName+this.lastName+"さん");
+    }
   }
 
   public void Bmi(){
