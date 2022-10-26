@@ -19,6 +19,7 @@ class Main {
       Process process1 = new Process(firstName, lastName, age, height, weight);
       process1.Fullname();
       process1.Bmi();
+      System.out.println("年齢："+process1.getAge());
     
   }
 }
