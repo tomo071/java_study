@@ -25,6 +25,10 @@ class Process {
     return this.age;
   }
 
+  public void setname(String firstName){
+    this.firstName = firstName;
+  }
+
   public void Bmi(){
     double bmi = this.weight/(this.height*2);
     double health = this.height*2*22;
