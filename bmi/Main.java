@@ -16,11 +16,11 @@ class Main {
       double weight = scanner.nextDouble();
 
       
-      Process process1 = new Process(firstName, lastName, age, height, weight);
-      process1.setname("名無し");
-      process1.Fullname();
-      process1.Bmi();
-      System.out.println("年齢："+process1.getAge());
+      Past past = new Past(firstName, lastName, age, height, weight);
+      past.setname("名無し");
+      past.Fullname();
+      past.Bmi();
+      System.out.println("年齢："+past.getAge());
     
   }
 }
