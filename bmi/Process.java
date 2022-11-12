@@ -17,16 +17,28 @@ class Process {
     this.weight = weight;
   }
 
-  public String Fullname(){
-    return this.firstName+" "+this.lastName;
+  public void setFname(String firstName){
+    this.firstName = firstName;
   }
 
-  public int getAge(){
+  public void setLname(String lastName){
+    this.lastName = lastName;
+  }
+
+  public int setAge(int age){
     return this.age;
   }
 
-  public void setname(String firstName){
-    this.firstName = firstName;
+  public void setHeight(double height){
+    this.height = height;
+  }
+
+  public void setWeight(double weight){
+    this.weight = weight;
+  }
+
+  public String Fullname(){
+    return this.firstName+" "+this.lastName;
   }
 
   public void Bmi(){

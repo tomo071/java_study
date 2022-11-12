@@ -16,11 +16,13 @@ class Main {
       double weight = scanner.nextDouble();
 
       
-      Past past = new Past(firstName, lastName, age, height, weight);
-      past.setname("名無し");
-      past.Fullname();
+      Past past = new Past();
+      past.setFname(firstName);
+      past.setLname(lastName);
+      past.setHeight(height);
+      past.setWeight(weight);
+      past.setAge(age);
       past.Bmi();
-      System.out.println("年齢："+past.getAge());
     
   }
 }
