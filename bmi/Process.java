@@ -8,15 +8,6 @@ class Process {
   private double height;
   private double weight;
 
-  Process(String firstName,String lastName,int age,double height,double weight){
-    count++;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.height = height;
-    this.weight = weight;
-  }
-
   public void setFname(String firstName){
     this.firstName = firstName;
   }

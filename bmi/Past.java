@@ -1,3 +1,2 @@
 class Past extends Process{
-  
 }
