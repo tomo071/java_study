@@ -1,17 +1,25 @@
+import java.util.Scanner;
 
 class Main {  
   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
     Car car = new Car();
 
-    car.setName("フェラーリ");
+    String carName = scanner.next();
+    String carColor = scanner.next();
+
+    car.setName(carName);
     
-    car.setColor("赤");
+    car.setColor(carColor);
     
     Bicycle bicycle = new Bicycle();
 
-    bicycle.setName("ビアンキ");
+    String bicycleName = scanner.next();
+    String bicycleNameColor = scanner.next();
+
+    bicycle.setName(bicycleName);
     
-    bicycle.setColor("緑");
+    bicycle.setColor(bicycleNameColor);
     
     System.out.println("【車の情報】");
     car.printData();
