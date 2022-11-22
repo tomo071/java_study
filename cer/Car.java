@@ -1,8 +1,14 @@
 class Car extends Vehicle{
   private int fuel = 50;
 
+  private int distance = 20;
+
   public int getFuel(){
     return this.fuel;
+  }
+
+  public int getDistance(){
+    return this.distance;
   }
 
   public void charge(int litre) {
@@ -17,4 +23,10 @@ class Car extends Vehicle{
     }
     System.out.println("ガソリン量：" + this.fuel + "L");
   }
+
+  public void mileage(int fuel, int distance){
+    System.out.println("可能走行距離は"+getFuel()*getDistance()+"kmです");
+  }
+
+
 }

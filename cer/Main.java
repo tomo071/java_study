@@ -11,7 +11,15 @@ class Main {
     car.setName(carName);
     
     car.setColor(carColor);
+
+    System.out.println("ガソリン量：" + car.getFuel() + "L");
     
+    System.out.println("-----------------");
+    System.out.print("給油する量を入力してください：");
+    int litre = scanner.nextInt();
+    
+    car.charge(litre);
+    car.mileage(litre, litre);
     Bicycle bicycle = new Bicycle();
 
     String bicycleName = scanner.next();
